@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="Fallos electrónicos.css">
+  <script src="Fallos electrónicos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="contacto-container">
+      <div class="info-contacto">
+        📞 Teléfono: 699 17 16 29 | 
+        ✉️  Correo: <a href="mailto:faustino.sansegundo@gmail.com" class="correo">faustino.sansegundo@gmail.com</a>
+      </div>
+      <button class="btn-contacto" onclick="window.location.href='contacto.html'">Contacto</button>
+    </div>
+  </header>
+  <div class="menu">
+    <button class="menu-button">
+      <a href="index.html" style="color: white; text-decoration: none;">Inicio</a>
+    </button>
+
+    <div class="menu" style="position: relative;">
+      <button onclick="toggleMenu()" class="menu-button">
+        Servicios <span id="arrow-main" class="arrow">▼</span>
+      </button>
+      <div id="submenu" class="menu-content">
+        <a href="Reconstrucción accidentes.html">Reconstrucción accidentes</a>
+        <a href="Tasación y Valoración.html">Tasación y Valoración</a>
+
+        <!-- Submenú Peritación automoción -->
+        <div class="submenu">
+          <div class="submenu-item" onclick="toggleSubmenu(event, 'sub-submenu-Peritación automoción', 'arrow-sub-Peritación automoción')">
+            Peritación automoción <span id="arrow-sub-Peritación automoción" class="arrow">▶</span>
+          </div>
+          <div id="sub-submenu-Peritación automoción" class="submenu-content">
+            <a href="Incendios.html">Incendios</a>
+            <a href="Averías mecánicas.html">Averías mecánicas</a>
+            <a href="Fallos electrónicos.html">Fallos electrónicos</a>
+            <a href="Defectos ocultos.html">Defectos ocultos</a>
+          </div>
+        </div>
+
+        <!-- Submenú Peritación maquinaria industrial -->
+        <div class="submenu">
+          <div class="submenu-item" onclick="toggleSubmenu(event, 'sub-submenu-Peritación maquinaria industrial', 'arrow-sub-Peritación maquinaria industrial')">
+            Peritación maquinaria industrial <span id="arrow-sub-Peritación maquinaria industrial" class="arrow">▶</span>
+          </div>
+          <div id="sub-submenu-Peritación maquinaria industrial" class="submenu-content">
+            <a href="Incendios.html">Incendios</a>
+            <a href="Averías mecánicas.html">Averías mecánicas</a>
+            <a href="Fallos electrónicos.html">Fallos electrónicos</a>
+            <a href="Defectos ocultos.html">Defectos ocultos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="menu-button">
+      <a href="Acerca de.html" style="color: white; text-decoration: none;">Acerca de</a>
+    </button>
+  </div>
+</body>
+
+
+
+<div class="contenedor">
+  <div class="texto">
+    <main class="contenido-contacto">
+      <h1>Fallos Electrónicos</h1>
+      <p>Nuestros ingenieros, especializados en mecánica y electrónica de automoción, forenses mecánicos, analizaran el defecto de funcionamiento, estableciendo alternativas de reparación y costes de la misma, analizando causas y efectos de dicha avería. Plasmando todo ello en un informe pericial independiente.</p>
+      <p>Peritación válida tanto para averías en garantía del fabricante, garantía de taller por reparación defectuosa, defectos ocultos en la compra del vehículo, etc.</p>
+      <p>Esta peritación se podrá realizar en todo tipos de vehículos: motocicletas, automóviles, industriales y agrícolas.</p>
+      <p>Se podrá analizar cualquier sistema, tanto mecánico como electrónico equipado en el vehículo, como por ejemplo: ADAS, airbag, sistemas mecánicos, sistemas de frenado y estabilidad, etc.</p>
+    </main>
+  </div>
+  <div class="imagen">
+    <img src="Foto-Averías mecánicas.jpg" alt="Imagen lateral" id="imagen-lateral">
+  </div>
+</div> 

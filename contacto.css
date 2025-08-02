@@ -248,22 +248,37 @@ main {
 
 
 /* Estilo para los campos del formulario */
-#formulario-contacto input[type="text"],
-#formulario-contacto input[type="email"],
-#formulario-contacto textarea {
-  width: 100%;
-  box-sizing: border-box;
-  max-width: 100%;
-  resize: none; /* evita que se pueda redimensionar el textarea */
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.fila-formulario {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
+
+.fila-formulario label {
+  width: 155px; /* Ancho fijo para alinear todas las etiquetas */
+  font-weight: bold;
+}
+
+.fila-formulario input,
+.fila-formulario textarea {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+#mensaje {
+  resize: none;
+}     
+
+
+  
 
 #formulario {
   display: none;        /* Oculto por defecto */
   margin-top: 20px;     /* Espacio cuando se muestra */
 }
+
 

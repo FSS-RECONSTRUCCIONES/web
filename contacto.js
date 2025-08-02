@@ -73,3 +73,24 @@ window.addEventListener('scroll', () => {
     img.style.transform = 'translateY(0)';
   }
 });
+
+/* Envío de formulario al correo */
+const $form = document.querySelector("#form")
+
+$form.addEventListener("submit", handleSubmit)
+
+async function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  const reponse = await fetch(this.action, {
+    method: this.method,
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  if (reponse.ok) {
+    this.reset()
+    alert("Gracias por contactar con nosotros")
+  }
+}

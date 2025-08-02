@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="Engranaje Multicolor.jpg">
+  <title>FSS-Reconstrucciones e informes periciales</title>
+  <link rel="stylesheet" href="contacto.css">
+  <script src="contacto.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="contacto-container">
+      <div class="info-contacto">
+        📞 Teléfono: 699 17 16 29 | 
+        ✉️  Correo: <a href="mailto:faustino.sansegundo@gmail.com" class="correo">faustino.sansegundo@gmail.com</a>
+      </div>
+      <button class="btn-contacto" onclick="window.location.href='contacto.html'">Contacto</button>
+    </div>
+  </header>
+  <div class="menu">
+    <button class="menu-button">
+      <a href="index.html" style="color: white; text-decoration: none;">Inicio</a>
+    </button>
+
+    <div class="menu" style="position: relative;">
+      <button onclick="toggleMenu()" class="menu-button">
+        Servicios <span id="arrow-main" class="arrow">▼</span>
+      </button>
+      <div id="submenu" class="menu-content">
+        <a href="Reconstrucción accidentes.html">Reconstrucción accidentes</a>
+        <a href="Tasación y Valoración.html">Tasación y Valoración</a>
+
+        <!-- Submenú Peritación automoción -->
+        <div class="submenu">
+          <div class="submenu-item" onclick="toggleSubmenu(event, 'sub-submenu-Peritación automoción', 'arrow-sub-Peritación automoción')">
+            Peritación automoción <span id="arrow-sub-Peritación automoción" class="arrow">▶</span>
+          </div>
+          <div id="sub-submenu-Peritación automoción" class="submenu-content">
+            <a href="Incendios.html">Incendios</a>
+            <a href="Averías mecánicas.html">Averías mecánicas</a>
+            <a href="Fallos electrónicos.html">Fallos electrónicos</a>
+            <a href="Defectos ocultos.html">Defectos ocultos</a>
+          </div>
+        </div>
+
+        <!-- Submenú Peritación maquinaria industrial -->
+        <div class="submenu">
+          <div class="submenu-item" onclick="toggleSubmenu(event, 'sub-submenu-Peritación maquinaria industrial', 'arrow-sub-Peritación maquinaria industrial')">
+            Peritación maquinaria industrial <span id="arrow-sub-Peritación maquinaria industrial" class="arrow">▶</span>
+          </div>
+          <div id="sub-submenu-Peritación maquinaria industrial" class="submenu-content">
+            <a href="Incendios.html">Incendios</a>
+            <a href="Averías mecánicas.html">Averías mecánicas</a>
+            <a href="Fallos electrónicos.html">Fallos electrónicos</a>
+            <a href="Defectos ocultos.html">Defectos ocultos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="menu-button">
+      <a href="Acerca de.html" style="color: white; text-decoration: none;">Acerca de</a>
+    </button>
+  </div>
+</body>
+
+
+
+<div class="contenedor">
+  <div class="texto">
+    <main class="contenido-contacto">
+      <h1>Contacto</h1>
+      <p>Contacte con <strong>FSS-Reconstrucciones e informes periciales</strong> y solicite un presupuesto previo.</p>
+      <p>Nos pondremos en contacto con usted para conocer detalles del informe, reconstrucción o peritación necesaria a sus necesidades.</p>
+      <p>Nuestro campo de trabajo abarca todo el territorio Nacional.</p>
+    <p>
+      Nos puede enviar un correo electrónico a la dirección:  
+      <a href="mailto:faustino.sansegundo@gmail.com" class="correo-link">
+        <img src="https://cdn-icons-png.flaticon.com/16/561/561127.png" alt="sobre" style="vertical-align: middle; margin-right: 5px;">faustino.sansegundo@gmail.com
+      </a>
+    </p>
+    </p>
+
+      <button id="mostrar-formulario" class="btn-contacto">Formulario</button>
+        <div id="formulario-contacto">
+
+        </div>
+      <p>Igualmente, si es su interés, puede contactar mediante el teléfono:   <strong>📞699 17 16 29</strong><br><br></p>
+      <p>Este mismo teléfono también dispone de servicio de Whatsapp<i class="fab fa-whatsapp" style="color: green; margin-left: 8px;"></i><span style="font-size: 17px;"> <strong>699 17 16 29</strong></span></p>
+    </main>
+  </div>
+  <div class="imagen">
+    <img src="Foto-Contacto.jpg" alt="Imagen lateral" id="imagen-lateral">
+  </div>
+</div> 
+
+<!-- Margen final de página -->
+<br><br><br>

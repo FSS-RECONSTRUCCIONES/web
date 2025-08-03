@@ -1,7 +1,7 @@
 /* Encabezado */
 body {
   font-family: Arial, sans-serif;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   background-image: url('Fondo-pantalla.jpg');
   background-size: cover;
@@ -9,26 +9,27 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;  /* ← Esto hace que el fondo no se mueva */
   width: 100%;
-  min-height: 120vh;
-
+  min-height: 100vh;
+  color: white;
 }
-
-
 body::before {
   content: "";
-  position: fixed; /* o usa `absolute` + ajuste al scroll */
-  inset: 0;
-  min-height: 1520vh;
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
+  height: 120%;
+  background-color: rgba(255, 255, 255, 0.4); /* blanco semitransparente */
   z-index: 1;
-  pointer-events: none;
+  pointer-events: none; /* deja que clics pasen al contenido */
 }
+
 /* Todo el contenido dentro del bloque queda encima */
 body > * {
   position: relative;
   z-index: 2;
 }
+
+
 
 header {
     background-color: #004080;
@@ -164,6 +165,23 @@ main {
   display: block;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Elementos del menú */
 .navegacion li {
     margin: 0;
@@ -182,102 +200,66 @@ main {
 
 
 
-/* Estilo correo texto */
 
-.correo-link {
-  font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cuadro al principio de la página*/
+
+.cuadro-llamativo {
+  background: linear-gradient(135deg, rgba(184, 227, 248, 0.4), rgba(0, 119, 170, 0.4));
   color: black;
-  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.correo-link:hover {
-  text-decoration: underline;
-}
-
-
-
-
-/* Contacto */
-.contenido-contacto {
-  padding: 20px;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-.contenido-contacto h1 {
-  color: #004080;
-}
-
-.contenedor {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos bajen si falta espacio */
-  gap: 20px;
-  max-width: 1200px; /* Limita el ancho máximo */
-  margin: 0 auto;
-  padding: 20px;
-  color: white;
-}
-
-.texto {
-  flex: 1 1 60%; /* crece, encoge y base del 60% ancho */
-  min-width: 280px; /* nunca se hace muy pequeño */
-  box-sizing: border-box;
-}
-
-.imagen {
-  flex: 1 1 35%;
-  min-width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* La alineación inicial es arriba */
-  position: relative; /* para poder moverla */
-  overflow: visible;
-}
-
-#imagen-lateral {
-  max-width: 100%;
-  height: 390px;
-  border-radius: 8px;
-  position: relative; /* importante para el movimiento */
-  transition: transform 0.3s ease; /* para suavizar el movimiento */
-  padding: 5%;
-}
-
-
-/* Estilo para los campos del formulario */
-.fila-formulario {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.cuadro-llamativo h2 {
+  font-size: 16px;
   margin-bottom: 15px;
 }
 
-.fila-formulario label {
-  width: 155px; /* Ancho fijo para alinear todas las etiquetas */
-  font-weight: bold;
+.cuadro-llamativo p {
+  font-size: 16px;
+  margin: 10px 0;
 }
 
-.fila-formulario input,
-.fila-formulario textarea {
-  flex: 1;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-family: inherit;
+.cuadro-llamativo .detalle {
+  font-size: 14px;
+  color:black;
+  margin: 40px
 }
 
-#mensaje {
-  resize: none;
-}     
-
-
-  
-
-#formulario {
-  display: none;        /* Oculto por defecto */
-  margin-top: 20px;     /* Espacio cuando se muestra */
-}
 

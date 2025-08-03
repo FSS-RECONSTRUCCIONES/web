@@ -246,13 +246,13 @@ main {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.cuadro-llamativo h2 {
-  font-size: 16px;
+.cuadro-llamativo li {
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
-.cuadro-llamativo p {
-  font-size: 16px;
+.cuadro-llamativo span {
+  font-size: 18px;
   margin: 10px 0;
 }
 
@@ -261,3 +261,4 @@ main {
   color:black;
   margin: 40px
 }
+

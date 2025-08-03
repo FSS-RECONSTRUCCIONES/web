@@ -247,12 +247,12 @@ main {
 }
 
 .cuadro-llamativo h2 {
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
 .cuadro-llamativo p {
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px 0;
 }
 
@@ -261,6 +261,7 @@ main {
   color:black;
   margin: 40px
 }
+
 
 
 
